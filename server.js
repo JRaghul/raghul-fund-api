@@ -12,7 +12,7 @@ const client = new MongoClient(process.env.DB_CRED)
 async function get_all_data(client) {
     console.log(" inside get all data")
     const data = await client.db('fundmanage').collection('fund').find().toArray()
-    console.log("data :", data)
+    console.log("raghul")
     return data
 }
 
